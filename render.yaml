@@ -2,5 +2,5 @@ services:
   - type: web
     name: moeanalyzer
     runtime: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn -w 4 backend.app:app
+    buildCommand: pip install -r malware-sandbox/backend/requirements.txt
+    startCommand: gunicorn -w 4 malware-sandbox.backend.app:app
